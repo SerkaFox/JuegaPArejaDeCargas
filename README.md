@@ -44,18 +44,18 @@ El proyecto está desarrollado con **Java (Spring Boot) para el backend** y **Re
 Antes de compilar el proyecto, asegúrate de tener instalado:
 - **Java 17**  
 - **Maven**  
-- **MySQL** (con una base de datos llamada `memorygame`)
+- **MySQL** (base de datos alojada en Railway)
 
 ### **2. Configuración de la base de datos**
-1. Abre MySQL y crea la base de datos:
-   ```sql
-   CREATE DATABASE memorygame;
+1. Conéctate a MySQL con el siguiente comando:
+   ```sh
+   mysql -h switchyard.proxy.rlwy.net -u root -p XuOjzdHFqvMubzWjZlbDrYuTDvFRoLic --port 35723 --protocol=TCP railway
    ```
 2. Configura las credenciales en `src/main/resources/application.properties`:
    ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/memorygame
+   spring.datasource.url=jdbc:mysql://switchyard.proxy.rlwy.net:35723/railway
    spring.datasource.username=root
-   spring.datasource.password=tu_contraseña
+   spring.datasource.password=XuOjzdHFqvMubzWjZlbDrYuTDvFRoLic
    spring.jpa.hibernate.ddl-auto=update
    ```
 
@@ -83,4 +83,4 @@ Puedes probar la API con las siguientes rutas:
 ## 📌 Contribuciones
 Si deseas contribuir, por favor abre un **issue** o haz un **pull request**.
 
-📧 Contacto: serkafox@gmail.com
+📧 Contacto: [Tu email o redes sociales]
