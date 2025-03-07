@@ -45,6 +45,11 @@ Antes de compilar el proyecto, asegúrate de tener instalado:
 - **Java 17**  
 - **Maven**  
 - **MySQL** (base de datos alojada en Railway)
+- 
+Para limpiar liblary viejo
+mvn clean package -U
+
+
 
 ### **2. Configuración de la base de datos**
 1. Conéctate a MySQL con el siguiente comando:
@@ -83,4 +88,4 @@ Puedes probar la API con las siguientes rutas:
 ## 📌 Contribuciones
 Si deseas contribuir, por favor abre un **issue** o haz un **pull request**.
 
-📧 Contacto: [Tu email o redes sociales]
+📧 Contacto: serkafox@gmail.com
